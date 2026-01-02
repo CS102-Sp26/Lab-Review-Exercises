@@ -26,7 +26,7 @@ def hashcode(n: int) -> str:
     return hashlib.sha256(str(n).encode('utf-8')).hexdigest()
 
 @pytest.mark.parametrize("data, result, testcase", q3_testcases)
-def test_q2(data, result, testcase):
+def test_q3(data, result, testcase):
     if testcase == True:
         assert define_three_most_popular_food_ingredients(data) == result
     else:
